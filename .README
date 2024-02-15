@@ -1,0 +1,5 @@
+##concurrently##
+we can use concurrently npm package tu get simular experiece as we get from
+nodemon -e ts,json --exec \"npm run dev"\
+
+concurrently \"npx tsc -w"\ \"nodemon dist/src/index.js"\
