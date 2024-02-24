@@ -3,3 +3,7 @@ we can use concurrently npm package tu get simular experiece as we get from
 nodemon -e ts,json --exec \"npm run dev"\
 
 concurrently \"npx tsc -w"\ \"nodemon dist/src/index.js"\
+
+if we have script with name "start":"..."
+and we create script "prestart":"..."  "prestart" will always run before "start" automatically 
+"poststart" follows same logic it would always run after "start"

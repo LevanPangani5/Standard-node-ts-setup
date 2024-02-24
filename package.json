@@ -8,12 +8,12 @@
     "build": "npm-run-all lint format test clean && tsc",
     "start": "node dist/src/index.js",
     "dev": "ts-node src",
-    "dev:w": "nodemon -e ts,json --exec \"npm run dev\"",
+    "dev:w": "nodemon -e js,ts,json --exec \"npm run dev\"",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "lint":"eslint src",
-    "format":"npx prettier --write src",
-    "format:check":"npx prettier --check src"
+    "lint": "eslint src",
+    "format": "npx prettier --write src",
+    "format:check": "npx prettier --check src"
   },
   "keywords": [],
   "author": "",
@@ -35,5 +35,8 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.1"
   }
 }
