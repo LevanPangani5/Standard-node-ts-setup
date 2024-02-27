@@ -3,8 +3,8 @@ declare global {
   namespace NodeJS {
     interface Global {
       gContact: {
-        name: string;
-      };
+        name: string
+      }
     }
   }
 }

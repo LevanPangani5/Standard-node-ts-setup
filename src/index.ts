@@ -15,7 +15,7 @@ export const server = createServer(
     })
     res.write(
       JSON.stringify({
-        data: 'Hello0'
+        data: 'Hello'
       })
     )
     res.end()
