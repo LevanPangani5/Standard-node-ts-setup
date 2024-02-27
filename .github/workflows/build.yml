@@ -1,15 +1,15 @@
-name: Build
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: ./github/actions/prepare
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/prepare
       - run: npm run build
+
+name: Build
+
+on:
+  pull_request: ~
+  push:
+    branches:
+      - master
