@@ -1,3 +1,5 @@
+has jest, eslint-prettier, watch mode , works with export/import , decorators
+
 ##concurrently##
 we can use concurrently npm package tu get simular experiece as we get from
 nodemon -e ts,json --exec \"npm run dev"\
@@ -7,3 +9,5 @@ concurrently \"npx tsc -w"\ \"nodemon dist/src/index.js"\
 if we have script with name "start":"..."
 and we create script "prestart":"..."  "prestart" will always run before "start" automatically 
 "poststart" follows same logic it would always run after "start"
+npm i --save-dev --save-exact prettier
+npx mrm@2 lint-staged  -adds husky and lint-staged
